@@ -3,7 +3,7 @@
 
 # username
 username() {
-	echo "%{$FG[013]%}%n%{$reset_color%}"
+	echo "%B%{$FG[013]%}%n%{$reset_color%}"
 }
 
 directory() {
@@ -12,7 +12,7 @@ directory() {
 }
 
 arrow() {
-	echo "%{$FG[011]%}➜%{$reset_color%}"
+	echo "%{$FG[011]%}%{%G➜%}%{$reset_color%}"
 }
 
-PROMPT='%B$(username) $(directory) $(arrow) '
+PROMPT='$(arrow) $(username) $(directory) '
