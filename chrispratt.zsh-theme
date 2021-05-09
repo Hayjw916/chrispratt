@@ -15,4 +15,4 @@ arrow() {
 	echo "%{$FG[011]%}%{%G➜%}%{$reset_color%}"
 }
 
-PROMPT='$(arrow) $(username) $(directory) '
+PROMPT='$(username) $(directory) $(arrow) '
